@@ -5,8 +5,10 @@ workflows:
 
     environment:
       flutter: stable
+      java: 17
 
     scripts:
+      - flutter clean
       - flutter pub get
       - flutter build apk --release
 
