@@ -8,10 +8,9 @@ workflows:
       java: 17
 
     scripts:
-      - flutter clean
-      - flutter pub get
-      - flutter doctor
-      - flutter build apk --release --no-shrink
+flutter clean
+flutter pub get
+flutter build apk --release
 
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
